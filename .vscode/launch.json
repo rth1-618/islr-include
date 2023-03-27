@@ -1,0 +1,41 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "genx_kp",
+      "type": "python",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "args": [
+        "--include_dir",
+        "/ISLR/init/INCLUDE",
+        "--save_dir",
+        "/ISLR/init/INCLUDE-master/keypoints",
+        "--dataset",
+        "include50"
+      ]
+    },
+    {
+      "name": "Python: Current File",
+      "type": "python",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "args": [
+        "--dataset",
+        "include50",
+        "--use_augs",
+        "--model",
+        "transformer",
+        "--data_dir",
+        "/ISLR/init/INCLUDE-master/keypoints"
+      ]
+    }
+  ]
+}
