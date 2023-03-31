@@ -33,6 +33,8 @@ python generate_keypoints.py --include_dir /ISLR/init/INCLUDE --save_dir /ISLR/i
 
 python runner.py --dataset include50 --use_augs --model transformer --use_cnn --data_dir /ISLR/init/INCLUDE-master/keypoints
 
+python runner.py --dataset include50 --use_augs --model transformer --use_cnn --data_dir /ISLR/init/INCLUDE-master/keypoints --epochs 1000
+
 - Use the `--use_pretrained` flag to either perform only inference using pretrained model or resume training with the pretrained model.
 
 ```bash
